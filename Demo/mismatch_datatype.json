@@ -1,0 +1,12 @@
+{
+  "id": "hello",
+  "firstname": "fn",
+  "lastname": "ln",
+  "pay": 1.1,
+  "active": true,
+  "badges": [
+    "Gold",
+    "Silver",
+    "Bronze"
+  ]
+}

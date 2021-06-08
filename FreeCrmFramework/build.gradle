@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testImplementation group: 'org.testng', name: 'testng', version: '7.4.0'
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+// https://mvnrepository.com/artifact/com.aventstack/extentreports
+    // https://mvnrepository.com/artifact/com.aventstack/extentreports
+    implementation group: 'com.aventstack', name: 'extentreports', version: '4.0.0'
+
+// https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver
+    // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.4.3'
+// https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas
+    implementation group: 'org.apache.poi', name: 'poi-ooxml-schemas', version: '4.1.2'
+
+    // https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml
+    // https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml
+    implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '5.0.0'
+
+    implementation group: 'org.apache.poi', name: 'poi', version: '5.0.0'
+
+
+    implementation group: 'org.apache.poi', name: 'poi-ooxml-schemas', version: '4.1.2'
+
+
+
+
+
+}
+
+test {
+    useJUnitPlatform()
+}

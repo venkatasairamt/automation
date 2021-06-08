@@ -1,0 +1,6 @@
+Sortings/Selection.java
+ Sortings.Selection
+Sortings/SelectionSort.java
+ Sortings.SelectionSort
+Sortings/Bubble.java
+ Sortings.Bubble

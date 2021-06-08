@@ -1,0 +1,12 @@
+<suite name="Demo">
+    <parameter name="useName" value="sai" />
+    <test name="Parameter Test one">
+        <classes>
+            <class name="CalculatorTest" >
+                <methods>
+                    <include name="add" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

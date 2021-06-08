@@ -1,0 +1,37 @@
+1. Add dependencies in build.graddle file
+dependencies are selenium, testng, Extentreports
+
+2. Create bellow folders
+Reports, Screenshots, config, TestData, Drivers, XmlFiles
+
+3. Create bellow packages in src/test/java folder
+Pages, Testcases and Utility
+
+4. In utility Package create bellow classes
+BrowserFactory
+
+5.In pages package create a Baseclass
+
+6. In pages package create a loginpage class.
+
+7. In testcase package create a logintestcrm class
+
+8. Create a config properties file in config folder
+
+9. Create a excel file in testdata folder
+
+10. create a excel data provider class in utility package.
+
+11. Go to base class create a object foe Exceldataprovider class
+
+12. creatr a configdatatprovider class in utility package.
+13. Go to baseclass and create object for config data provider class
+
+14. create a helper class in utility package.
+
+15. Create a teardown method in base calss
+
+16. create a getcurrentdateandtime() in helaper class
+
+
+

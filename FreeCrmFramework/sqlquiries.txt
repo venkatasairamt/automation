@@ -1,0 +1,54 @@
+1. List of city names from table that donot start with vowles and donot end with vowles , result donot
+contains duplicates
+
+Q: SELECT DISTINCT CITY FROM Employes where SUBSTR(City,1,1) NOT IN ('a','e','i','o','u','A','E','I','O','U') AND
+AND SUBSTR(city,-1,1) NOT IN  ('a','e','i','o','u','A','E','I','O','U');
+
+Exp: SUBSTR(String, String value, String length)
+M  U  M  B  A  I
+1  2  3  4  5  6
+-6 -5 -4 -3 -2 -1
+
+2.How to create table (structure) from existing table
+
+Q: SELECT * INTO newtable FROM oldtable WHERE 1=0;
+
+Exp: it's create same table structure.
+
+3. Highest salary in department
+
+tables : employees: eid,ename, dob, ddid, salary
+dept: ddid, dname, manger
+
+Q: SELECT ddid , MAX(salary) from employees Group By ddid;
+
+4. print dname , eslary, dept id
+
+Q: SELECT d.name AS 'Department',
+          e. name AS 'Employee',
+          salary
+  From Employee e
+  INNER JOIN Department d
+  ON e.departmentid =d.id
+  where (Departmentid, Salary)
+  IN
+  (SELECT Departmentid, MAX(Salary) From Employees Group By DepartmentId)
+
+5. To find all duplicate emails in a table
+
+Q: SELECT email FROM person
+    Group By email
+    Having count(email)>1
+
+6. Second highest salary
+
+a) MAX
+SELECT MAX(salary) from employee where salary < (Select MAX(salary) from employee);
+
+b) LIMIT
+Select salary from (select salary from employee order by salary desc LIMIT 2)
+As EMP ORDER By salary LIMIT 1;
+
+c)TOP
+SELECT Top 1 salary from (select Top 2 salary  from employee ORDER By salary DESC) AS emp ORDER BY salary ASC;
+
